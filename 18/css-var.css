@@ -1,0 +1,45 @@
+:root{
+    --mainBg:#333;
+    --mainColor:white;
+    --base-font-size:16px;
+    --ButtonBg:blue;
+    --MARGINAUTO:auto;
+    /*  Bad examples 
+    --block@value
+    --padding&value
+    --title color: */
+    --main-font-family:'Inter', sans-serif;
+    --secondary-font-family:'Roboto Mono', monospace;
+    --secondary-title:blue;
+
+}
+html, body{
+    /* font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Mono', monospace; */
+    background-color: var(--mainBg);
+    color:var(--mainColor);
+    font-family: var(--main-font-family);
+    font-size: var(--base-font-size);
+}
+p{
+    font-size: 2rem;
+}
+h3{
+    --secondary-title:red;
+    color: var(--secondary-title);
+    font-family: var(--secondary-font-family);
+}
+
+@media (max-width:1200px){
+    :root{
+        --mainBg:#08d5d2;
+        --mainColor:rgb(19, 2, 2);
+        --base-font-size:10px;
+        --main-font-family:'Roboto Mono', monospace;
+        --secondary-font-family:'Inter', sans-serif;
+    }
+    h3{
+        --secondary-title:rgb(230, 9, 168);
+        font-size: 3rem;
+    }
+}
